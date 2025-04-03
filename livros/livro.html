@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de livro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <h2>Cadastro de Livros</h2>
+    <form id="formTime">
+      <input type="text" placeholder="Título" id="titulo" />
+
+      <input type="text" placeholder="Páginas" id="paginas" />
+      <input type="text" placeholder="Gênero" id="genero" />
+
+      <input type="text" placeholder="Autor" id="autor" />
+
+      <input type="text" id="inputAutor" placeholder="Pesquisar por autor" />
+
+      <button button id="btnBuscarAutor">Buscar</button>
+
+      <input type="button" onclick="salvarTimes(event)" value="Cadastrar" />
+    </form>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Páginas</th>
+          <th>Gênero</th>
+          <th>Autor</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tbTimes"></tbody>
+    </table>
+    <!-- Botão Voltar -->
+    <button
+      class="back-button"
+      onclick="window.location.href = '../index.html';"
+    >
+      <i class="fas fa-arrow-left"></i> Voltar
+    </button>
+    <script src="livro.js"></script>
+  </body>
+</html>
